@@ -1,35 +1,28 @@
 
-class Student
+
+
+class Test
 {
-	String name;
+	private String name;
 	
-	public Student()
+	
+	public String getName()
 	{
-		
+		return name;
 	}
-	public Student(String name)
+	public void setName(String name)
 	{
 		this.name = name;
 	}
 }
 
-public class Main {
-
-	
+class Main
+{
 	public static void main(String[] args)
 	{
-		Student student = new Student("test");
+		Test t = new Test();
 		
-		Class cls = student.getClass();
-		
-		System.out.println(cls.getName());
-		System.out.println(cls.getSuperclass());
-		
-		StringBuffer sb = new StringBuffer();
-		sb.append("asd");
-		System.out.println(sb);
-		
-		
-		
+		t.setName("asd");
+		System.out.println(t.getName());
 	}
 }
