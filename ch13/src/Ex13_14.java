@@ -42,7 +42,7 @@ class Table {
 	String[] dishNames = { "donut","donut","burger" };
 	final int MAX_FOOD = 6;
 	private ArrayList<String> dishes = new ArrayList<>();
-	public synchronized void add(String dish) { // synchronized¸¦ Ãß°¡
+	public synchronized void add(String dish) { // synchronizedë¥¼ ì¶”ê°€
 		if(dishes.size() >= MAX_FOOD)	
 			return;
 		dishes.add(dish);
@@ -72,7 +72,7 @@ class Table {
 
 class Ex13_14 {
 	public static void main(String[] args) throws Exception {
-		Table table = new Table(); // ¿©·¯ ¾²·¹µå°¡ °øÀ¯ÇÏ´Â °´Ã¼
+		Table table = new Table(); // ì—¬ëŸ¬ ì“°ë ˆë“œê°€ ê³µìœ í•˜ëŠ” ê°ì²´
 
 		new Thread(new Cook(table), "COOK").start();
 		new Thread(new Customer(table, "donut"),  "CUST1").start();

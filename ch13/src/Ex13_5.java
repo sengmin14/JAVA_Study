@@ -4,9 +4,8 @@ class Ex13_5 {
 	public static void main(String[] args) throws Exception  {
 		ThreadEx5_1 th1 = new ThreadEx5_1();
 		th1.start();
-
-		String input = JOptionPane.showInputDialog("¾Æ¹« °ªÀÌ³ª ÀÔ·ÂÇÏ¼¼¿ä."); 
-		System.out.println("ÀÔ·ÂÇÏ½Å °ªÀº " + input + "ÀÔ´Ï´Ù.");
+		String input = JOptionPane.showInputDialog("ì•„ë¬´ ê°’ì´ë‚˜ ì…ë ¥."); 
+		System.out.println("ì…ë ¥í•˜ì‹  ê°’ì€ " + input + "ì…ë‹ˆë‹¤.");
 	}
 }
 
